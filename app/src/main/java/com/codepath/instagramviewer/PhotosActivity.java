@@ -73,6 +73,12 @@ public class PhotosActivity extends ActionBarActivity {
                          photo.imageUrl = photoJSON.getJSONObject("images").getJSONObject("standard_resolution").getString("url");
                          photo.imageHeight = photoJSON.getJSONObject("images").getJSONObject("standard_resolution").getInt("height");
                          photo.likes_count = photoJSON.getJSONObject("likes").getInt("count");
+
+                         photo.profile_picture_url = photoJSON.getJSONObject("user").getString("profile_picture");
+                         photo.comments_count = photoJSON.getJSONObject("comments").getInt("count");
+                         photo.firstcomment = photoJSON.getJSONObject("comments").getJSONArray("data").getJSONObject(0).getString("text");
+                         photo.firstcomment_user = photoJSON.getJSONObject("comments").getJSONArray("data").getJSONObject(0).getJSONObject("from").getString("username");
+
                          photos.add(photo);
                      }
                      //notify the adapter that it should populate the new changes into the listview
