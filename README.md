@@ -1,6 +1,5 @@
 # InstagramViewer App
 
-
 This is an Android application for displaying the Instagram images using the [Instagram API](http://instagram.com/developer/).
 Time spent: 10 hours spent in total
 
@@ -12,7 +11,6 @@ Completed user stories:
  * [x] Advanced: Show latest comment and commenter for each photo
  * [x] Advanced: Display each user profile image using a RoundedImageView
  * [x] Advanced: Improve the user interface through styling and coloring
-
 
 # Walkthrough of all user stories
 
