@@ -78,7 +78,7 @@
         android:layout_marginLeft="30dp"
         android:layout_alignLeft="@+id/imageHeart"
         android:layout_below="@+id/imagePhoto"
-        android:paddingTop="8dp" />
+        android:paddingTop="10dp" />
 
     <TextView
         android:layout_width="wrap_content"
