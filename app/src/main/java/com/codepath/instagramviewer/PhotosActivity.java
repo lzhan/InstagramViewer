@@ -76,8 +76,9 @@ public class PhotosActivity extends ActionBarActivity {
 
                          photo.profile_picture_url = photoJSON.getJSONObject("user").getString("profile_picture");
                          photo.comments_count = photoJSON.getJSONObject("comments").getInt("count");
-                         photo.firstcomment = photoJSON.getJSONObject("comments").getJSONArray("data").getJSONObject(0).getString("text");
-                         photo.firstcomment_user = photoJSON.getJSONObject("comments").getJSONArray("data").getJSONObject(0).getJSONObject("from").getString("username");
+                         JSONArray jsonArray = photoJSON.getJSONObject("comments").getJSONArray("data");
+                         photo.lastcomment = jsonArray.getJSONObject(jsonArray.length()-1).getString("text");
+                         photo.lastcomment_user = jsonArray.getJSONObject(jsonArray.length()-1).getJSONObject("from").getString("username");
 
                          photos.add(photo);
                      }

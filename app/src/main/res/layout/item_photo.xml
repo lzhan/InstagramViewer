@@ -28,7 +28,6 @@
         android:layout_alignParentTop="true"
         android:layout_marginLeft="30dp"
         android:textColor="#ff284986"
-        android:autoText="true"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp" />
 
@@ -64,13 +63,10 @@
         android:id="@+id/imageHeart"
         android:src="@drawable/heart"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="20dp"
-        android:layout_marginTop="10dp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:layout_below="@+id/imagePhoto"
-        android:paddingBottom="8dp" />
+        android:paddingTop="8dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -80,10 +76,38 @@
         android:textSize="10sp"
         android:textColor="#ff284986"
         android:layout_marginLeft="30dp"
-        android:layout_marginBottom="30dp"
-        android:layout_alignParentBottom="true"
         android:layout_alignLeft="@+id/imageHeart"
-        android:paddingBottom="8dp" />
+        android:layout_below="@+id/imagePhoto"
+        android:paddingTop="8dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/caption_default_text"
+        android:id="@+id/tvCommenterName"
+        android:textColor="#ff284986"
+        android:textSize="10sp"
+        android:layout_below="@+id/imageHeart"
+        android:layout_marginLeft="17dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/caption_default_text"
+        android:id="@+id/tvComment"
+        android:textColor="#ff5ca4d4"
+        android:maxLines="1"
+        android:textSize="10sp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/tvCommenterName"
+        android:layout_below="@+id/imageHeart"
+        android:layout_alignParentBottom="true"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp" />
 
 
 </RelativeLayout>
